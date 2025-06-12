@@ -1,42 +1,67 @@
-#root {
-  max-width: 1280px;
-  margin-left: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+nav a {
+  padding: 8px 16px;
+  border: 1px solid #007bff;
+  color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.2s;
 }
 
-.card {
-  padding: 2em;
+nav a:hover {
+  background-color: #007bff;
+  color: white;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.read-the-docs {
-  color: #888;
+.table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.table td, .table th {
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.btn-success:hover {
+  background-color: #218838;
 }
